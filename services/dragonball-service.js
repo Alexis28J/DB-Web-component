@@ -1,6 +1,6 @@
 export class DragonballService {
   constructor() {
-    this.apiUrl = "https://dragonball-api.com/api/characters";
+    this.apiUrl = "https://dragonball-api.com/api/characters?limit=100";
   }
 
   fetchCharacters() {
