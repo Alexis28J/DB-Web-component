@@ -26,7 +26,7 @@ class HomeComponent extends HTMLElement {
     const service = new DragonballService();
     service.fetchCharacters().then(chars => {
       // puoi limitare il numero se sono troppi
-      const limited = chars.slice(0, 20);
+      const limited = chars.slice(0, 60);
       for (const char of limited) {
         const name = char.name || "Unknown";
         const description = char.description || "No description available.";
